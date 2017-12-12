@@ -1,0 +1,9 @@
+
+{% extends '::base.html.twig' %}
+
+{% block title %}Viajes {% endblock %}
+
+{% block body %}
+    <h2>Listado de Viajes de Europa</h2>
+    <a href="{{ path('viaje_by_slug', {'slug': 'new-slug'}) }}">Viaje 1</a>
+{% endblock %}
