@@ -1,0 +1,3 @@
+viajes_homepage:
+    path:     /
+    defaults: { _controller: ViajesBundle:Default:index }
