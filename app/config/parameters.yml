@@ -2,7 +2,7 @@
 parameters:
     database_host: 172.27.240.130
     database_port: 3306
-    database_name: bbdd_symfony
+    database_name: bbdd_symfony_mj
     database_user: root
     database_password: A244spM273bb
     mailer_transport: smtp

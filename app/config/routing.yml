@@ -1,7 +1,24 @@
-viajes:
-    resource: "@ViajesBundle/Resources/config/routing.yml"
+blog:
+    resource: "@BlogBundle/Controller/"
+    type:     annotation
     prefix:   /
 
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
+blog:
+    path: /{_locale}/post/{id}
+    defaults: { _controller: BlogBundle:Post:show }
+    requirements:
+      _locale: es|en
+index:
+  path: /blog
+  defaults: { _controller: BlogBundle:Entrada:index }  
+  
+entradas_viaje_create:
+  path: /viaje/create
+  defaults: { _controller: BlogBundle:Viaje:create }
+  
+entradas_create:
+  path: /entradas/create
+  defaults: { _controller: BlogBundle:Entrada:create }  
