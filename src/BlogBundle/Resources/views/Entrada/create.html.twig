@@ -1,0 +1,38 @@
+
+{% extends "::base.html.twig" %}
+
+{% block title %} BlogBundle:Entrada:create{% endblock %}
+
+{% block body %}
+	{{ form_start(form,{'attr':{'id': 'entrada-create'}}) }}
+	{{ form_errors(form) }}
+	
+	<ul>
+		<li>
+			{{ form_label(form.titulo) }}:
+			{{ form_errors(form.titulo) }}
+			{{ form_widget(form.titulo) }}
+		</li>
+		<li>
+			{{ form_label(form.fecha) }}:
+			{{ form_errors(form.fecha) }}
+			{{ form_widget(form.fecha) }}
+		</li>	
+		<li>
+			{{ form_label(form.descripcion) }}:
+			{{ form_errors(form.descripcion) }}
+			{{ form_widget(form.descripcion) }}
+		</li>	
+		<li>
+			{{ form_label(form.viaje) }}:
+			{{ form_errors(form.viaje) }}
+			{{ form_widget(form.viaje) }}
+		</li>			
+		<li>
+			{{ form_widget(form.save) }}
+		</li>
+	</ul>
+	
+	{{ form_end(form) }}
+	
+	{% endblock %}

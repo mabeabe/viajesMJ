@@ -1,0 +1,12 @@
+<?php
+namespace BlogBundle\Entity;
+
+class Author
+{
+    private $id;
+    
+    protected $name;
+    
+    protected $surname;
+}
+

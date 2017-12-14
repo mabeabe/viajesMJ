@@ -1,0 +1,10 @@
+{% extends "BlogBundle:Entrada:base.html.twig" %}
+{% block body %}
+    <h3>Oferta de Viajes</h3>
+    {% for entrada in entradas %}
+    	<p>{{ entrada.titulo }}: a las {{ entrada.fecha|date('d/m/Y H:i:s') }}</p>
+    	<br><p>{{ entrada.descripcion }}</p>
+    {% endfor %}
+{% endblock %}
+			
+			
