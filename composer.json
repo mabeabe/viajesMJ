@@ -5,7 +5,8 @@
 	"description" : "Experiencias y consejos para tus viajes",
 	"autoload" : {
 		"psr-4" : {
-			"AppBundle\\" : "src/AppBundle"
+			"AppBundle\\" : "src/AppBundle",
+			"BlogBundle\\" : "src/BlogBundle"
 		},
 		"classmap" : [
 			"app/AppKernel.php",
@@ -69,10 +70,10 @@
 			"dev-master" : "3.4-dev"
 		}
 	},
+	"homepage" : "http://172.27.240.81/blog_viajes/web/app.php",
 	"authors" : [{
 			"name" : "MJesus Bea",
 			"email" : "mbea@howdeniberia.com"
 		}
-	],
-	"homepage" : "http://172.27.240.81/blog_viajes/web/app.php"
+	]
 }
