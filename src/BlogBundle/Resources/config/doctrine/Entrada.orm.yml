@@ -1,0 +1,26 @@
+
+
+BlogBundle\Entity\Entrada:
+  type: entity
+  repositoryClass: BlogBundle\Repository\EntradaRepository
+  table: entradas
+  manyToOne:
+    autor:
+      inversedBy: entradas      
+      targetEntity: Viaje
+      joinColumn: 
+        name: viaje_id
+        referencedColumnName: id
+  id:
+    id:
+      type: integer
+      generator: {strategy: AUTO}
+  fields:
+    titulo: 
+      type: text
+    fecha:
+      type: date
+    descripcion:
+      type: text
+   
+    

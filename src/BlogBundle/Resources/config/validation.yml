@@ -1,0 +1,8 @@
+BlogBundle\Entity\Viaje:
+
+  properties:
+    name:
+      - NotBlank: ~
+      
+    surname:
+      - NotBlank: ~
