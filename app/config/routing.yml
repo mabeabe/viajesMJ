@@ -1,16 +1,17 @@
-blog:
-    resource: "@BlogBundle/Controller/"
+user:
+    resource: "@UserBundle/Controller/"
     type:     annotation
     prefix:   /
-
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
+    
 blog:
     path: /{_locale}/post/{id}
     defaults: { _controller: BlogBundle:Post:show }
     requirements:
       _locale: es|en
+
 index:
   path: /blog
   defaults: { _controller: BlogBundle:Entrada:index }  
@@ -21,4 +22,16 @@ entradas_viaje_create:
   
 entradas_create:
   path: /entradas/create
-  defaults: { _controller: BlogBundle:Entrada:create }  
+  defaults: { _controller: BlogBundle:Entrada:create } 
+
+login:
+  path: /login
+  defaults: { _controller: BlogBundle:Security:login }
+  
+logout:
+  path: /logout
+
+  
+users_create:
+  path: /users/create
+  defaults: { _controller: UserBundle:Default:create } 
